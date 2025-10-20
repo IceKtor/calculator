@@ -1,0 +1,211 @@
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .calculator {
+            width: 320px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #display {
+            width: 100%;
+            height: 70px;
+            text-align: right;
+            font-size: 36px;
+            color: #ffffff;
+            background: transparent;
+            border: none;
+            padding: 0px;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+            animation: glowText 2s infinite alternate;
+        }
+
+        @keyframes glowText {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b3ff; }
+        }
+
+        input {
+                color: #fff;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #0fa,
+                0 0 82px #0fa,
+                0 0 92px #0fa,
+                0 0 102px #0fa,
+                0 0 151px #0fa;
+        }
+
+
+
+
+
+
+
+
+
+
+        .buttons {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 24px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+       
+       
+       
+       
+       
+        button:active::before {
+            width: 200px;
+            height: 200px;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .btnop {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+        }
+
+        .btnop:hover {
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+        }
+
+      .btncolor {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+        }
+
+        .btncolor:hover {
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+        }
+
+        .btnc {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        }
+
+      .btnc:hover {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        }
+
+        .calculator::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+            background-size: 20px 20px;
+            animation: bgAnimate 20s linear infinite;
+            opacity: 0.5;
+        }
+
+ @keyframes bgAnimate {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50%, 50%); }
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: crugli 10s infinite linear;
+            opacity: 0.3;
+        }
+
+     @keyframes crugli {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100px, 100px); }
+        }
+
+
+
+
+
+
+
+
+        
+        h1 {
+            position: fixed;
+            top: 150px;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            animation: svet 2s infinite alternate;
+        }
+
+
+  @keyframes svet {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b3ff; }
+        }
+        
