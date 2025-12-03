@@ -1,5 +1,5 @@
         body {
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background: linear-gradient(135deg, #81dcf0, #00efc6, #58f01c);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -208,4 +208,5 @@
             0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6; }
             100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00b3ff; }
         }
+
         
